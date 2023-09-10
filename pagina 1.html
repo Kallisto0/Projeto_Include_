@@ -1,0 +1,463 @@
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=1440, maximum-scale=1.0"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Jomolhari:400");
+
+.screen textarea:focus,
+.screen input:focus {
+  outline: none;
+}
+
+.screen * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.screen div {
+  -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+  display: contents;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+.component-wrapper * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+  pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+  visibility: hidden !important;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.full-width-a {
+  width: 100%;
+}
+
+.full-height-a {
+  height: 100%;
+}
+
+.container-center-vertical {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  pointer-events: none;
+}
+
+.container-center-vertical > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated input {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.overlay-base {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.overlay-base.animate-appear {
+  align-items: center;
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+  pointer-events: none;
+}
+
+@keyframes reveal {
+  from { opacity: 0 }
+ to { opacity: 1 }
+}
+
+.animate-nodelay {
+  animation-delay: 0s;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-flex-center {
+  align-self: flex-center;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input:focus {
+  outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root { 
+  --black: #000000;
+  --eerie-black: #1e1c1c;
+  --white: #ffffff;
+ 
+  --font-size-l: 16px;
+  --font-size-m: 12px;
+  --font-size-s: 10px;
+  --font-size-xl: 20px;
+  --font-size-xxl: 25px;
+  --font-size-xxxl: 60px;
+ 
+  --font-family-jomolhari: "Jomolhari", Helvetica;
+}
+.jomolhari-normal-white-10px {
+  color: var(--white);
+  font-family: var(--font-family-jomolhari);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.jomolhari-normal-black-16px {
+  color: var(--black);
+  font-family: var(--font-family-jomolhari);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+}
+
+
+/* screen - desktop-1 */
+
+.desktop-1 {
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/64fe2fe7f82cd68cb2df6905/releases/64fe31e48f2f44c908881ebc/img/desktop---1.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 1540px;
+  overflow-x: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.desktop-1 .frame-1-Ys8k0x::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.desktop-1 .frame-1-Ys8k0x {
+  background-color: var(--white);
+  height: 664px;
+  left: 230px;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: relative;
+  top: 327px;
+  width: 844px;
+}
+
+.desktop-1 .rectangle-1-tcZojf {
+  background-color: #1d1c1b;
+  height: 558px;
+  left: 616px;
+  position: absolute;
+  top: 53px;
+  width: 198px;
+}
+
+.desktop-1 .x1998-atualmente-tcZojf {
+  background-color: transparent;
+  height: auto;
+  left: 725px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 532px;
+  width: 74px;
+}
+
+.desktop-1 .jorge-mario-da-silva-tcZojf {
+  background-color: transparent;
+  height: auto;
+  left: 725px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 335px;
+  width: 74px;
+}
+
+.desktop-1 .periodo-de-atividade-tcZojf {
+  background-color: transparent;
+  height: auto;
+  left: 631px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 536px;
+  width: 67px;
+}
+
+.desktop-1 .ocupaes-tcZojf {
+  background-color: transparent;
+  height: auto;
+  left: 631px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 489px;
+  width: 67px;
+}
+
+.desktop-1 .rectangle-2-tcZojf {
+  background-color: transparent;
+  height: 263px;
+  left: 623px;
+  object-fit: cover;
+  position: absolute;
+  top: 62px;
+  width: 183px;
+}
+
+.desktop-1 .jorge-mrio-da-silva-tcZojf {
+  background-color: transparent;
+  color: var(--black);
+  font-family: var(--font-family-jomolhari);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 45px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 61px;
+  width: 537px;
+}
+
+.desktop-1 .biografia-e-carreira-tcZojf {
+  background-color: transparent;
+  color: var(--black);
+  font-family: var(--font-family-jomolhari);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 45px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 124px;
+  width: 180px;
+}
+
+.desktop-1 .line-1-tcZojf {
+  background-color: transparent;
+  height: 1px;
+  left: 45px;
+  object-fit: cover;
+  position: absolute;
+  top: 157px;
+  width: 535px;
+}
+
+.desktop-1 .o-primeiro-de-quatro-tcZojf {
+  background-color: transparent;
+  color: var(--black);
+  font-family: var(--font-family-jomolhari);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 45px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 177px;
+  width: 537px;
+}
+
+.desktop-1 .nascimento-tcZojf {
+  background-color: transparent;
+  height: auto;
+  left: 631px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 441px;
+  width: 67px;
+}
+
+.desktop-1 .nome-completo-tcZojf {
+  background-color: transparent;
+  height: auto;
+  left: 631px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 335px;
+  width: 67px;
+}
+
+.desktop-1 .local-de-nascimento-tcZojf {
+  background-color: transparent;
+  height: auto;
+  left: 631px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 386px;
+  width: 67px;
+}
+
+.desktop-1 .line-2-tcZojf {
+  background-color: transparent;
+  height: 286px;
+  left: 715px;
+  object-fit: cover;
+  position: absolute;
+  top: 325px;
+  width: 1px;
+}
+
+.desktop-1 .belford-roxo-rio-de-janeiro-brasil-tcZojf {
+  background-color: transparent;
+  height: auto;
+  left: 725px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 381px;
+  width: 74px;
+}
+
+.desktop-1 .x8-de-junho-de-1970-53-anos-tcZojf {
+  background-color: transparent;
+  height: auto;
+  left: 725px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 439px;
+  width: 74px;
+}
+
+.desktop-1 .ator-cantor-compositor-tcZojf {
+  background-color: transparent;
+  height: auto;
+  left: 725px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 485px;
+  width: 74px;
+}
+</style></head><body style="margin: 0;"><input type="hidden" id="anPageName" name="page" value="desktop-1"><div class="container-center-horizontal"><div class="desktop-1 screen " data-id="6:14"><div class="frame-1-Ys8k0x" data-id="7:15"><div class="rectangle-1-tcZojf" data-id="7:21"></div><div class="x1998-atualmente-tcZojf jomolhari-normal-white-10px" data-id="9:46">1998 - atualmente</div><div class="jorge-mario-da-silva-tcZojf jomolhari-normal-white-10px" data-id="9:41">Jorge Mario da Silva</div><div class="periodo-de-atividade-tcZojf jomolhari-normal-white-10px" data-id="9:40">Periodo de atividade</div><div class="ocupaes-tcZojf jomolhari-normal-white-10px" data-id="9:39">Ocupações</div><img class="rectangle-2-tcZojf" data-id="8:24" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/64fe2fe7f82cd68cb2df6905/releases/64fe31e48f2f44c908881ebc/img/rectangle-2@2x.png" alt="Rectangle 2"><p class="jorge-mrio-da-silva-tcZojf" data-id="8:30">Jorge Mário da Silva (Belford Roxo - 8 de junho de 1970), conhecido pelo nome artístico de Seu Jorge, é um ator, cantor, compositor e multi-instrumentista brasileiro de MPB, R&amp;B, samba e soul.</p><div class="biografia-e-carreira-tcZojf" data-id="8:31">Biografia e Carreira</div><img class="line-1-tcZojf" data-id="8:32" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/64fe2fe7f82cd68cb2df6905/releases/64fe31e48f2f44c908881ebc/img/line-1.svg" alt="Line 1"><p class="o-primeiro-de-quatro-tcZojf" data-id="8:33">O primeiro de quatro filhos, Seu Jorge teve uma infância dura no bairro Gogó da Ema, em Belford Roxo. Começou a trabalhar com dez anos de idade em uma borracharia, primeira de várias ocupações como contínuo, marceneiro e descascador de batatas em um bar. Serviu ao Exército Brasileiro em 1989, mas não se adaptou à vida militar e acabou sendo expulso, em janeiro de 1990.<br><br>As variadas profissões nunca ofuscaram o seu verdadeiro desejo de se tornar músico. Desde adolescente, frequentava as rodas de samba cariocas acompanhando o pai e os irmãos em bailes funks e bailes charmes da periferia, e cedo começou a se profissionalizar cantando na noite. Foi aí que, em 1990, a morte de seu irmão Vitório em uma chacina levou a família à desestruturação, e Seu Jorge acabou virando sem-teto por cerca de três anos. A virada se deu quando Gabriel Moura, sobrinho do clarinetista Paulo Moura, convidou-o para participar de um espetáculo “A saga da farinha”, do qual Gabriel era o diretor musical. Acabou participando de mais de 20 espetáculos com a Companhia de Teatro TUERJ (Teatro da UERJ), como cantor e ator. Como não tinha onde dormir, Seu Jorge dormiu no teatro, entre 1993 e 1997 - ano em que passou a integrar a banda Farofa Carioca que lançou seu primeiro CD em 1998 com uma mistura dos ritmos negros de várias partes do mundo, como samba, reggae, jongo, funk e rap. A partir daí, Seu Jorge teve sua carreira engrenada e passou a participar de vários projetos, como um disco de tributo a Tim Maia e a participação em estúdio, bem como a turnê da banda brasileira Planet Hemp, em 2000.<br><br>Participou também em diversos filmes em sua carreira, como Cidade de Deus, Tropa de Elite 2, Marighella, entre outros. Além da carreira na música e nos filmes, Seu Jorge é um dos donos da cervejaria Karavelle e de dois bares na cidade de São Paulo. Atualmente, ele vive com sua esposa e filhos em Los Angeles, Estados Unidos.</p><div class="nascimento-tcZojf jomolhari-normal-white-10px" data-id="9:34">Nascimento</div><div class="nome-completo-tcZojf jomolhari-normal-white-10px" data-id="9:37">Nome Completo</div><div class="local-de-nascimento-tcZojf jomolhari-normal-white-10px" data-id="9:38">Local de Nascimento</div><img class="line-2-tcZojf" data-id="9:35" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/64fe2fe7f82cd68cb2df6905/releases/64fe31e48f2f44c908881ebc/img/line-2.svg" alt="Line 2"><p class="belford-roxo-rio-de-janeiro-brasil-tcZojf jomolhari-normal-white-10px" data-id="9:42">Belford Roxo, Rio de Janeiro, Brasil</p><p class="x8-de-junho-de-1970-53-anos-tcZojf jomolhari-normal-white-10px" data-id="9:36">8 de junho de 1970 (53 anos)</p><p class="ator-cantor-compositor-tcZojf jomolhari-normal-white-10px" data-id="9:45">ator - cantor - compositor</p></div></div></div><script src="launchpad-js/launchpad-banner.js" async></script><script defer src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js"></script></body></html>

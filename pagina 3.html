@@ -1,0 +1,443 @@
+
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=1440, maximum-scale=1.0"><meta name="og:type" content="website"><meta name="twitter:card" content="photo"><script id="anima-hotspots-script" src="hotspots.js"></script><script id="anima-overrides-script" src="overrides.js"></script><script src="https://animaapp.s3.amazonaws.com/js/timeline.js"></script><style>
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Jomolhari:400");
+
+.screen textarea:focus,
+.screen input:focus {
+  outline: none;
+}
+
+.screen * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.screen div {
+  -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+  display: contents;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+.component-wrapper * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+  pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+  visibility: hidden !important;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.full-width-a {
+  width: 100%;
+}
+
+.full-height-a {
+  height: 100%;
+}
+
+.container-center-vertical {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  pointer-events: none;
+}
+
+.container-center-vertical > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated input {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.overlay-base {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.overlay-base.animate-appear {
+  align-items: center;
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay-base.animate-disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.overlay-base.animate-disappear * {
+  pointer-events: none;
+}
+
+@keyframes reveal {
+  from { opacity: 0 }
+ to { opacity: 1 }
+}
+
+.animate-nodelay {
+  animation-delay: 0s;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-flex-center {
+  align-self: flex-center;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input:focus {
+  outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root { 
+  --black: #000000;
+  --eerie-black: #1e1c1c;
+  --white: #ffffff;
+ 
+  --font-size-l: 16px;
+  --font-size-m: 12px;
+  --font-size-s: 10px;
+  --font-size-xl: 20px;
+  --font-size-xxl: 25px;
+  --font-size-xxxl: 60px;
+ 
+  --font-family-jomolhari: "Jomolhari", Helvetica;
+}
+.jomolhari-normal-white-10px {
+  color: var(--white);
+  font-family: var(--font-family-jomolhari);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.jomolhari-normal-black-16px {
+  color: var(--black);
+  font-family: var(--font-family-jomolhari);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+}
+
+
+/* screen - frame-4 */
+
+.frame-4 {
+  background-color: var(--white);
+  height: 1540px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.frame-4 .title-UlqJXo {
+  background-color: transparent;
+  color: var(--black);
+  font-family: var(--font-family-jomolhari);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 494px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 44px;
+  width: 440px;
+}
+
+.frame-4 .line-3-UlqJXo {
+  background-color: transparent;
+  height: 1px;
+  left: 48px;
+  position: absolute;
+  top: 170px;
+  width: 1330px;
+}
+
+.frame-4 .rectangle-11-UlqJXo {
+  background-color: var(--eerie-black);
+  height: 230px;
+  left: 150px;
+  position: absolute;
+  top: 259px;
+  width: 170px;
+}
+
+.frame-4 .rectangle-12-UlqJXo {
+  background-color: var(--eerie-black);
+  height: 230px;
+  left: 629px;
+  position: absolute;
+  top: 259px;
+  width: 170px;
+}
+
+.frame-4 .rectangle-13-UlqJXo {
+  background-color: var(--eerie-black);
+  height: 230px;
+  left: 1096px;
+  position: absolute;
+  top: 259px;
+  width: 170px;
+}
+
+.frame-4 .rectangle-14-UlqJXo {
+  background-color: var(--eerie-black);
+  height: 230px;
+  left: 1091px;
+  position: absolute;
+  top: 751px;
+  width: 170px;
+}
+
+.frame-4 .rectangle-15-UlqJXo {
+  background-color: var(--eerie-black);
+  height: 230px;
+  left: 629px;
+  position: absolute;
+  top: 751px;
+  width: 170px;
+}
+
+.frame-4 .rectangle-16-UlqJXo {
+  background-color: var(--eerie-black);
+  height: 230px;
+  left: 150px;
+  position: absolute;
+  top: 751px;
+  width: 170px;
+}
+
+.frame-4 .image-16-UlqJXo {
+  background-color: transparent;
+  height: 220px;
+  left: 155px;
+  object-fit: cover;
+  position: absolute;
+  top: 756px;
+  width: 160px;
+}
+
+.frame-4 .image-15-UlqJXo {
+  background-color: transparent;
+  height: 220px;
+  left: 634px;
+  object-fit: cover;
+  position: absolute;
+  top: 756px;
+  width: 160px;
+}
+
+.frame-4 .image-17-UlqJXo {
+  background-color: transparent;
+  height: 220px;
+  left: 1097px;
+  object-fit: cover;
+  position: absolute;
+  top: 756px;
+  width: 160px;
+}
+
+.frame-4 .image-12-UlqJXo {
+  background-color: transparent;
+  height: 220px;
+  left: 155px;
+  object-fit: cover;
+  position: absolute;
+  top: 264px;
+  width: 160px;
+}
+
+.frame-4 .image-11-UlqJXo {
+  background-color: transparent;
+  height: 220px;
+  left: 634px;
+  position: absolute;
+  top: 264px;
+  width: 160px;
+}
+
+.frame-4 .image-14-UlqJXo {
+  background-color: transparent;
+  height: 220px;
+  left: 1101px;
+  object-fit: cover;
+  position: absolute;
+  top: 264px;
+  width: 160px;
+}
+
+.frame-4 .ano-de-estreia-2002-UlqJXo {
+  background-color: transparent;
+  height: auto;
+  left: 146px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 519px;
+  width: 170px;
+}
+
+.frame-4 .ano-de-estreia-2021-UlqJXo {
+  background-color: transparent;
+  height: auto;
+  left: 150px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 1011px;
+  width: 170px;
+}
+
+.frame-4 .ano-de-estreia-2017-UlqJXo {
+  left: 629px;
+  top: 1008px;
+}
+
+.frame-4 .ano-de-estreia-2022-UlqJXo {
+  background-color: transparent;
+  height: auto;
+  left: 1097px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 1008px;
+  width: 170px;
+}
+
+.frame-4 .ano-de-estreia-2010-UlqJXo {
+  background-color: transparent;
+  height: auto;
+  left: 633px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 519px;
+  width: 170px;
+}
+
+.frame-4 .ano-de-estreia-2017-AxvA2y {
+  left: 1091px;
+  top: 518px;
+}
+
+.frame-4 .ano-de-estreia-2017 {
+  background-color: transparent;
+  height: auto;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  width: 170px;
+}
+</style></head><body style="margin: 0;background: #ffffff;"><input type="hidden" id="anPageName" name="page" value="frame-4"><div class="container-center-horizontal"><div class="frame-4 screen " data-id="9:56"><h1 class="title-UlqJXo" data-id="71:15">Alguns Filmes</h1><img class="line-3-UlqJXo" data-id="71:16" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/64fe2fe7f82cd68cb2df6905/releases/64fe31e48f2f44c908881ebc/img/line-3.svg" alt="Line 3"><div class="rectangle-11-UlqJXo" data-id="71:37"></div><div class="rectangle-12-UlqJXo" data-id="71:38"></div><div class="rectangle-13-UlqJXo" data-id="71:39"></div><div class="rectangle-14-UlqJXo" data-id="71:40"></div><div class="rectangle-15-UlqJXo" data-id="71:41"></div><div class="rectangle-16-UlqJXo" data-id="71:42"></div><img class="image-16-UlqJXo" data-id="71:33" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/64fe2fe7f82cd68cb2df6905/releases/64fe31e48f2f44c908881ebc/img/image-16@2x.png" alt="image 16"><img class="image-15-UlqJXo" data-id="71:31" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/64fe2fe7f82cd68cb2df6905/releases/64fe31e48f2f44c908881ebc/img/image-15@2x.png" alt="image 15"><img class="image-17-UlqJXo" data-id="71:35" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/64fe2fe7f82cd68cb2df6905/releases/64fe31e48f2f44c908881ebc/img/image-17@2x.png" alt="image 17"><img class="image-12-UlqJXo" data-id="71:25" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/64fe2fe7f82cd68cb2df6905/releases/64fe31e48f2f44c908881ebc/img/image-12@2x.png" alt="image 12"><img class="image-11-UlqJXo" data-id="71:23" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/64fe2fe7f82cd68cb2df6905/releases/64fe31e48f2f44c908881ebc/img/image-11@2x.png" alt="image 11"><img class="image-14-UlqJXo" data-id="71:29" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" anima-src="https://cdn.animaapp.com/projects/64fe2fe7f82cd68cb2df6905/releases/64fe31e48f2f44c908881ebc/img/image-14@2x.png" alt="image 14"><p class="ano-de-estreia-2002-UlqJXo jomolhari-normal-black-16px" data-id="71:48">Ano de Estreia: 2002<br>Gênero: Crime, Drama, Suspense<br>Duração: 130 min</p><p class="ano-de-estreia-2021-UlqJXo jomolhari-normal-black-16px" data-id="71:51">Ano de Estreia: 2021<br>Gênero: Drama, Biografia, História<br>Duração: 155 min</p><p class="ano-de-estreia-2017-UlqJXo ano-de-estreia-2017 jomolhari-normal-black-16px" data-id="71:52">Ano de Estreia: 2017<br>Gênero: Drama, Biografia, Esporte<br>Duração: 107 min</p><p class="ano-de-estreia-2022-UlqJXo jomolhari-normal-black-16px" data-id="71:53">Ano de Estreia: 2022<br>Gênero: Drama<br>Duração: 103 min</p><p class="ano-de-estreia-2010-UlqJXo jomolhari-normal-black-16px" data-id="71:49">Ano de Estreia: 2010<br>Gênero: Drama, Ação<br>Duração: 116 min</p><p class="ano-de-estreia-2017-AxvA2y ano-de-estreia-2017 jomolhari-normal-black-16px" data-id="71:50">Ano de Estreia: 2017<br>Gênero: Drama<br>Duração: 110 min</p></div></div><script src="launchpad-js/launchpad-banner.js" async></script></body></html>
